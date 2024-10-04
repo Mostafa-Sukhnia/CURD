@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Cairo:wght@200..1000&family=Playwrite+BE+VLG:wght@100..400&display=swap');
+body{
+
+    font-family: "Arimo", sans-serif;
+    input{
+        transition: .5s;
+        background-color: #000;
+        border: none;
+        padding: 10px;
+        border-radius: 10px;
+        caret-color: #fff;
+        color:#fff;
+    }
+    input::placeholder{
+        color:#fff;
+font-size: 16px;
+align-items: center;
+    }
+    input:focus{
+        border: none;
+        outline:none;
+    }
+    button{
+        transition: .5s;
+        background-color: red;
+        border: none;
+        outline:none;
+        padding: 10px 5px;
+        border-radius: 10px;
+color:#fff;
+cursor: pointer;
+    }
+    input:hover,
+    button:hover{
+        transform: scale(1.03);
+    }
+    background-color: #282828;
+    color:#fff;
+    font-size: 20px;
+    header{
+       
+        margin: 10px 0px 10px 0px;
+        text-transform: uppercase;
+        text-align: center;
+        h2{
+            margin-bottom: 10px;
+        }
+        i{
+            font-size: 30px;
+            margin-top: 30px;
+            margin-bottom: 10px !important;
+            cursor: pointer;
+            display: none !important;
+            
+        }
+        .fa-regular{
+            color: #000;
+        }
+        .fa-solid{
+            color:gold;
+            display: block !important;
+        }
+    }
+.container{
+    width:80%;
+    margin: auto;
+}
+.title{
+    width:100%;
+    margin-bottom: 10px;
+}
+.price{
+    margin-bottom: 10px;
+}
+.price input{
+    width:calc(100% / 5);
+}
+.price button{
+    width:fit-content;
+    text-align: left;
+    padding: 10px;
+}
+.create{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.create input{
+    margin-bottom: 10px;
+}
+.display{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    
+}
+.display input{
+    margin-bottom: 10px;
+}
+.display button{
+    width: 49%;
+
+
+}
+.display .but{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+.del{
+    width: 100%;
+    /* display: none; */
+    margin-bottom: 10px;
+}
+table{
+    width:100%;
+text-align: center;
+border-collapse: collapse;
+overflow-x: auto;
+tr{
+    margin-bottom: 10px;
+}
+th{
+    padding: 5px;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+}
+td button{
+padding: 5px;
+}
+.table-container {
+    width: 100%;
+    overflow-x: auto; /* Enables horizontal scroll */
+}
+
+}
+@media(max-width:767px){
+    .container{
+        width: 95% !important;
+        margin: auto;
+    }
+    .price button{
+        margin-top: 10px;
+    }
+}
+.total{
+    transition: .5s;
+}
+tr{
+    border-bottom: 1px solid #000;
+    td{
+    padding: 5px 0px;
+
+    }
+}
+.deleted button{
+    width:100%;
+    margin-bottom: 10px;
+}
+
+.save{
+    color: #fff;
+    background-color: green !important;
+    display: none ;
+}
